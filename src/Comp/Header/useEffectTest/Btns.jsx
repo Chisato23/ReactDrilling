@@ -7,14 +7,26 @@ function Btns({result}) {
     // const [searchResult,setSearchResult]=useState()
     
 
-
-    useEffect(()=>{(
+       useEffect(()=>{(
     console.log('UE its working'),
-    fetch(`https://jsonplaceholder.typicode.com/${display}`)
+    fetch(`https://jsonplaceholder.typicode.com/posts?postId=1`)
+
   .then((response) => response.json())
   .then((json) => setJson(json))
     )
     },[display])
+   
+
+   
+
+  //   useEffect(()=>{(
+  //   console.log('UE its working'),
+  //   fetch(`https://jsonplaceholder.typicode.com/${display}/`)
+
+  // .then((response) => response.json())
+  // .then((json) => setJson(json))
+  //   )
+  //   },[display])
   return (
     <>
     {/* <button onClick={()=>{setDisplay('Cats')}}>Cats</button>
