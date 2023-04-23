@@ -1,0 +1,12 @@
+
+.link-css-wrapper{
+    display: grid;
+    gap: 5em    ;
+
+   
+}
+.link-css{
+    color: rgb(43, 226, 116);
+    background: black;
+    grid-template-columns: 1fr 1fr;
+}
